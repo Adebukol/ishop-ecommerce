@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
+body{
+  font-family: sans-serif;
+}
+.header{
+  background: linear-gradient(135deg,#fff,#cfab27);
+}
 .container{
   padding: 40px;
 }
@@ -25,13 +29,19 @@ nav ul li{
 }
 a{
   text-decoration: none;
-  color: #555;
+  color: #393838;
+  font-size: 13px;
+  font-weight: 700;
+}
+a:hover{
+  color:#DA5726;
+  font-weight: 700;
 }
 p{
   color: #555;
 }
 .search{
-  background-color: antiquewhite;
+  background-color: #fff;
   width: 500px;
   margin: auto 20px;
   padding: 10px;
@@ -59,5 +69,100 @@ button img{
   border: none;
   outline: none;
   background: transparent;
-  background-color: antiquewhite;
+  background-color: #fff;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+.col {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col img{
+  max-width: 100%;
+  transform: rotate(5deg);
+  padding: 20px 0;
+}
+.col h1{
+  font-size: 50px;
+  line-height: 65px;
+  margin: 25px 0;
+}
+.btn{
+  display: inline-block;
+  color: #fff;
+  background: #DA5726;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin: 30px 0;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #5D262D;
+  color: #fff;
+}
+
+.category{
+  margin: 70px 0;
+}
+.col-1{
+flex: 30%;
+min-width: 250px;
+margin-bottom: 30px;
+}
+.col-1 img{
+  width: 100%;
+  padding: 20px;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.heading {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color:#5D262D;
+}
+.heading::after{
+  content: "";
+  width: 80px;
+  height: 5px;
+  background:#DA5726;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.col-2{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-2 img{
+  width: 100%;
+}
+h4{
+color:#5D262D;
+}
+.col-2 p{
+  font-size: 14px;
+}
+.col-2:hover{
+  transform: translateY(-5px);
 }
