@@ -190,7 +190,6 @@ small{
 /*----------------feedback-------------------------*/
 .feedback{
   padding-top: 100px;
-
 }
 .feedback .col-2{
 text-align: center;
@@ -212,4 +211,61 @@ font-size: 12px;
 margin: 12px 0;
 line-height: 20px;
 color: #DA5726;
+}
+.feedback .col-2 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+/*----------------------footer--------------------*/
+footer{
+  background: #000;
+  color: #5D262D;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+}
+footer p{
+  color: #8a8a8a;
+  font-weight: 700;
+}
+.copy{
+  text-align: center;
+}
+.copy a{
+  color:#8a8a8a;
+}
+footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer ul li{
+  color: #8a8a8a;
+}
+.footer-col,.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+min-width: 200px;
+margin-bottom: 20px;
+margin-right: 20px;
+}
+
+.footer-col-2 img{
+  width: 60px;
+  
+}
+.footer-col-4 img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px;
+}
+.footer-logo{
+  width: 100px;
+  align-self: center;
+  padding: 10px;
+  margin-right: 20px;
 }
