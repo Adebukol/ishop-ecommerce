@@ -6,6 +6,7 @@
 body{
   font-family: sans-serif;
 }
+
 .header{
   background: linear-gradient(135deg,#fff,#cfab27);
 }
@@ -61,7 +62,7 @@ button{
   background: transparent;
   border: none;
   outline: none;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 button img{
   width: 25px;
@@ -87,7 +88,6 @@ button img{
 
 .col img{
   max-width: 100%;
-  transform: rotate(5deg);
   padding: 20px 0;
 }
 .col h1{
@@ -106,10 +106,12 @@ button img{
   transition: background 0.5s;
 }
 .btn:hover{
-  background: #5D262D;
-  color: #fff;
+  background: transparent;
+  color: #5D262D;
+  border: 2px solid #5D262D;
 }
 
+/*----------------featured category-------------------------*/
 .category{
   margin: 70px 0;
 }
@@ -165,4 +167,49 @@ color:#5D262D;
 }
 .col-2:hover{
   transform: translateY(-5px);
+}
+/*----------------offer-banner-------------------------*/
+.offer-banner{
+  height: 600px;
+  margin-top: 80px;
+  background: linear-gradient(135deg,#fff,#cfab27); 
+}
+.offer .row{
+  height: 500px;
+}
+.col .offer-img{
+  /*TLBR */
+  padding: 0px 50px 20px 50px;
+  border-radius: 50%;
+}
+small{
+  color:#5D262D;
+  font-size: 13px;
+  font-weight: 600;
+}
+/*----------------feedback-------------------------*/
+.feedback{
+  padding-top: 100px;
+
+}
+.feedback .col-2{
+text-align: center;
+padding: 40px 20px;
+box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+cursor:pointer;
+transition: transform 0.5s;
+}
+.feedback .col-2 img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.feedback .col-2:hover{
+  transform: translateY(-10px);
+}
+.col-2 p{
+font-size: 12px;
+margin: 12px 0;
+line-height: 20px;
+color: #DA5726;
 }
