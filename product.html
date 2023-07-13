@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1024px)" href="style.css">
+  <title>All-Products i-shop ecommerce website</title>
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/Logo.png"></a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Looking for something? search here">
+          <button><img src="images/search.png"></button>
+        </div>
+        <nav>
+          <ul id="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href="">Wishlist</a></li>
+          </ul>
+        </nav>
+        <img src="images/my-cart.svg" class="cart" width="30px" height="30px">
+        <img src="images/menu.png" class="hamburger" onclick="menutoggle()">
+        <img src="images/arrows_button_on.svg" onclick="darkmode()" alt="" id="switch-btn" width="30px" height="30px">
+      </div>
+    </div>
+
+<!----------------------------------------------------------------------Product---------------------------------------------->
+<div class="small-container">
+  <div class="row row-1">
+    <h2>All Products</h2>
+    <select >
+    <option>Default sorting</option>
+    <option>Sort by Price</option>
+    <option>Sort by Sales</option></select>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <img src="images/Black-trainers.png" alt="Black-trainers">
+      <h4>Black-trainers</h4>
+      <p>$40.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/baby-cloth2.png" alt="baby-cloth2">
+      <h4>Baby Gown</h4>
+      <p>$10.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/bag4.png" alt="large bag">
+      <h4>Pink Handbag</h4>
+      <p>$50.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/computer-2.png" alt="desktop">
+      <h4>Desktop Computer</h4>
+      <p>$100.00</p>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-2">
+      <img src="images/pink-bag.png" alt="Black-trainers">
+      <h4>Pink set bag</h4>
+      <p>$70.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/cloth-4.png" alt="baby-cloth2">
+      <h4>Top</h4>
+      <p>$20.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/blue-trainers.png" alt="large bag">
+      <h4>Blue trainers</h4>
+      <p>$50.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/book-2.png" alt="desktop">
+      <h4>Story Book</h4>
+      <p>$3.00</p>
+    </div>
+    <div class="col-2">
+      <img src="images/heel-shoe.png" alt="Black-trainers">
+      <h4>Flower pattern shoe</h4>
+      <p>$60.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/bag3.png" alt="baby-cloth2">
+      <h4>Luxury Bag</h4>
+      <p>$200.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/white-sneakers.png" alt="large bag">
+      <h4>White Sneakers</h4>
+      <p>$150.00</p>
+    </div>
+
+    <div class="col-2">
+      <img src="images/cloth-6.png" alt="desktop">
+      <h4>Sweater</h4>
+      <p>$3.00</p>
+    </div>
+  </div>
+  <div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594</span>
+  </div>
+</div>
+
+<!--------------------------------------------------footer------------------------------------------------->
+<footer>
+  <div class="container">
+    <div class="row footer-row">
+      <a href="index.html"><img class="footer-logo" src="images/Logo.png" alt="logo-image"/> </a>
+        <div class="footer-col">
+          <h3>Great value</h3>
+          <p>We offer competitive prices on over 100 million items.</p>
+        </div>
+        <div class="footer-col-1">
+            <h3>Nationwide shopping</h3>
+        <p>We ship to over 200 countries and regions, and our site comes in 12 languages.</p> 
+        </div>
+        <div class="footer-col-2">
+            <h3>Safe payment</h3>
+            <p>Pay with the world’s most popular and secure payment methods.</p>
+            <div class="media-2">
+                <img class="payment-method" src="images/paypal.png" alt="paypal">
+                <img class="payment-method" src="images/master.png" alt="mastercard">
+                <img class="payment-method" src="images/paystack.png" alt="paystack">
+                
+            </div>   
+        </div>
+        <div class="footer-col-3">
+            <h3>Shop with confidence</h3>
+            <p>Our Buyer Protection policy covers your entire purchase journey, no scam zone.</p>
+            <ul>
+              <li>Return policy</li>
+              <li>Our Blog</li>
+              <li>Coupons</li>
+            </ul>
+        </div>
+
+        <div class="footer-col-4">
+            <h3>Connect with Us</h3>
+            <div class="media-1">
+                <a href="#"><img class="media" src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img class="media" src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img class="media" src="images/whatsapp.png" alt="whatsapp"></a>
+            </div>       
+        </div>
+    </div>
+  </div>
+  <hr>
+    <p class="copy">Copyright &copy; 2022, 19Cart. Designed by <a href="https://www.linkedin.com/in/adebukola-omowole">Adebukola Omowole</a> All rights reserved.</p>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
