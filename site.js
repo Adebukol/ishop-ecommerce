@@ -1,15 +1,23 @@
 //-------------------Toggle menu
 const navLink =document.getElementById("navlinks");
+const hamBtn = document.getElementsByClassName("hamburger")
 navLink.style.maxHeight = "0px";
 
+hamBtn.onclick =function(){
+  if(navLink.style.maxHeight = "200px"){
+  hamBtn.src ="images/icon-phone.svg";
+}
+}
 function menutoggle(){
   if(navLink.style.maxHeight == "0px"){
     navLink.style.maxHeight = "200px";
+    
   }
   else{
     navLink.style.maxHeight = "0px";
   }
 }
+
 
 const switchMode =document.getElementById("switch-btn");
 
