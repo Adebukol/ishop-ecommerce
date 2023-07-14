@@ -25,3 +25,19 @@ switchMode.onclick= function () {
   }
 }
 
+// js for product details page----------------------------------
+const productImg = document.getElementById("product-img");
+const thumbnail=document.getElementsByClassName("product-thumbnail")
+
+thumbnail[0].onclick = function(){
+  productImg.src = thumbnail[0].src;
+}
+thumbnail[1].onclick = function(){
+  productImg.src = thumbnail[1].src;
+}
+thumbnail[2].onclick = function(){
+  productImg.src = thumbnail[2].src;
+}
+thumbnail[3].onclick = function(){
+  productImg.src = thumbnail[3].src;
+}
