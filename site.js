@@ -30,14 +30,14 @@ const productImg = document.getElementById("product-img");
 const thumbnail=document.getElementsByClassName("product-thumbnail")
 
 thumbnail[0].onclick = function(){
-  productImg.src = thumbnail[0].src;
+  productImg.src = "images/image-product-1.jpg";
 }
 thumbnail[1].onclick = function(){
-  productImg.src = thumbnail[1].src;
+  productImg.src = "images/image-product-2.jpg";
 }
 thumbnail[2].onclick = function(){
-  productImg.src = thumbnail[2].src;
+  productImg.src = "images/image-product-3.jpg";
 }
 thumbnail[3].onclick = function(){
-  productImg.src = thumbnail[3].src;
+  productImg.src = "images/image-product-4.jpg";
 }

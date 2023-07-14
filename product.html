@@ -9,32 +9,31 @@
   <title>All-Products i-shop ecommerce website</title>
 </head>
 <body>
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="images/i-logo.png" width="60px" height="60px"></a>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/i-logo.png" width="100px" height="70px"></a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Looking for something?">
+          <button><img src="images/search.png"></button>
+        </div>
+        <nav>
+          <ul id="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Account</a></li>
+          </ul>
+        </nav>
+        <div class="menu-images">
+          
+          <img src="images/cart-new.svg" class="cart-img" width="25px" height="24px">
+          <img src="images/arrows_button_on.svg" alt="" id="switch-btn" width="28px" height="28px">
+          <img src="images/menu.png" class="hamburger" onclick="menutoggle()">
       </div>
-      <div class="search">
-        <input type="text" placeholder="Looking for something?">
-        <button><img src="images/search.png"></button>
       </div>
-      <nav>
-        <ul id="navlinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Account</a></li>
-        </ul>
-      </nav>
-      <div class="menu-images">
-        <img src="images/new-cart-icon.png" alt="" width="28px" height="28px">
-        <img src="images/cart-new.svg" class="cart" width="28px" height="28px">
-        <img src="images/arrows_button_on.svg" alt="" id="switch-btn" width="28px" height="28px">
-        <img src="images/menu.png" class="hamburger" onclick="menutoggle()">
-    </div>
-    </div>
-
 <!----------------------------------------------------------------------Product---------------------------------------------->
 <div class="small-container">
   <div class="row row-1">
@@ -46,9 +45,9 @@
   </div>
   <div class="row">
     <div class="col-2">
-      <img src="images/Black-trainers.png" alt="Black-trainers">
-      <h4>Black-trainers</h4>
-      <p>$40.00</p>
+      <a href="product-details.html"><img src="images/image-product-1.jpg" alt="Black-trainers"></a>
+      <h4>White and Carton Sneakers</h4>
+      <p>$100.00</p>
     </div>
 
     <div class="col-2">
@@ -131,8 +130,8 @@
 <!--------------------------------------------------footer------------------------------------------------->
 <footer>
   <div class="container">
-    <div class="row footer-row">
-      <a href="index.html"><img class="footer-logo" src="images/Logo.png" alt="logo-image"/> </a>
+    <div class="row"id="footer-row">
+      <a href="index.html"><img class="footer-logo" src="images/i-logo.png" alt="logo-image"/> </a>
         <div class="footer-col">
           <h3>Great value</h3>
           <p>We offer competitive prices on over 100 million items.</p>
