@@ -6,28 +6,35 @@
 body{
   font-family: sans-serif;
 }
-
+body.light-mode{
+  background-color: #fff;
+}
+body.dark-mode{
+  background-color: #000;
+  color:#fff;
+}
 .header{
   background: linear-gradient(135deg,#fff,#cfab27);
 }
 .container{
   padding: 40px;
+  max-width: 100%;
 }
 .navbar{
   display: flex;
   align-items: center;
   padding: 20px;
+  justify-content: space-between;
 }
 .navbar nav{
-  flex: 1;
-  text-align: right;
-  align-items: center;
+  margin-left: 50px;
 }
 
 nav ul li{
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+  text-align: right;
 }
 a{
   text-decoration: none;
@@ -75,16 +82,21 @@ button img{
   background: transparent;
   background-color: #f7f5f5;
 }
-/* .navbar nav .menu-images{
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
+.navbar .menu-images{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.navbar .menu-images img{
+  margin-left: 10px;
+}
 .cart{
   overflow: hidden;
 }
-#switch-btn{
+/* #switch-btn{
   margin-left: 10px;
-}
+} */
+
 .hamburger{
   display: none;
 
@@ -123,6 +135,7 @@ button img{
   transition: background 0.5s;
 }
 .btn:hover{
+  transform: translateX(2px);
   background: transparent;
   color: #5D262D;
   border: 2px solid #5D262D;
@@ -242,7 +255,7 @@ footer{
   font-size: 14px;
   padding: 60px 0 20px;
 }
-.row .footer-row{
+#footer-row{
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -301,7 +314,7 @@ hr{
 /*----------------------------------------------------All Product page------------------------------------------------------------*/
 .row-1{
   justify-content: space-between;
-  margin: 100px auto 50px;
+  margin: 70px auto 50px;
 }
 select{
   border: 1px solid #ff523b;
@@ -328,6 +341,74 @@ select:focus{
   background: #DA5726;
   color: #fff;
 }
+
+/*--------------------Product details page--------------------------------*/
+.single-product{
+  margin-top: 80px;
+}
+.single-product .col-1 img{
+padding: 0px;
+border-radius: 15px;
+}
+.single-product .col-1{
+  padding: 20px;
+  padding-left: 50px;
+}
+.single-product h1{
+  line-height: 50px;
+}
+.single-product p{
+  margin-bottom: 50px;
+}
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #DA5726;
+}
+input:focus{
+  outline: none;
+}
+
+.thumbnail{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.small-img-col img{
+  margin-top: 10px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.small-img-col img:hover{
+  opacity: 50%;
+  transform: translateY(5px);
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   /* .container{
