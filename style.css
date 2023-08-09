@@ -18,6 +18,7 @@ body.dark-mode{
 }
 .header{
   background: linear-gradient(135deg,#fff,#cfab27);
+  border-bottom-right-radius: 150px;
 }
 .container{
   padding: 40px;
@@ -140,7 +141,7 @@ button img{
   color: #fff;
   background: #DA5726;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 25px;
   margin: 30px 0;
   transition: background 0.5s;
@@ -214,6 +215,7 @@ color:#5D262D;
   height: 600px;
   margin-top: 80px;
   background: linear-gradient(135deg,#fff,#cfab27); 
+  border-top-left-radius: 150px;
 }
 .offer .row{
   height: 500px;
@@ -224,9 +226,12 @@ color:#5D262D;
   border-radius: 50%;
 }
 small{
-  color:#5D262D;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.col-1, .col-2 img:hover{
+  transform: scale(.9);
 }
 /*----------------feedback-------------------------*/
 .feedback{
@@ -476,7 +481,16 @@ th:last-child{
   
   .small-container{
     padding:10px ;
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .heading{
+    margin-bottom: 0px;
+  }
+  .col{
+    padding: 0px 10px 0px 10px;
+  }
+  .col-2{
+    margin-bottom: 10px;
   }
   .search{
     margin-left: 0px;
@@ -534,6 +548,7 @@ th:last-child{
   .small-container .cart{
     padding: 20px;
   }
+  /* #088178 */
 }
 @media screen and (max-width: 1260px) {
   nav ul {
